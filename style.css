@@ -59,7 +59,7 @@ nav ul li a {
 
 .hero {
   height: 100vh;
-  background: url("images/sanchita.jpg") center center / cover no-repeat;
+  background: url("sanchita.jpg") center center / cover no-repeat;
   background-attachment: fixed;   /* 🔥 THIS FIXES THE BACKGROUND */
   position: relative;
   padding: 120px;
@@ -274,4 +274,5 @@ footer {
   margin: auto;
   padding: 0 20px;
 }
+
 
