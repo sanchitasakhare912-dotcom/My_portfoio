@@ -274,5 +274,81 @@ footer {
   margin: auto;
   padding: 0 20px;
 }
+/* ---------- MOBILE RESPONSIVE ---------- */
+@media (max-width: 768px) {
+
+  /* Navbar */
+  nav {
+    height: auto;
+    padding: 15px 20px;
+  }
+
+  .nav-container {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  nav ul {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+  }
+
+  /* Hero text */
+  .main-name {
+    font-size: 40px;
+    letter-spacing: 1px;
+  }
+
+  .tagline,
+  .tagline2,
+  .tagline3 {
+    font-size: 14px;
+  }
+
+  .hero-content {
+    padding: 0 15px;
+  }
+
+  /* Sections */
+  section {
+    padding: 80px 20px;
+  }
+
+  /* About section */
+  .about-box {
+    flex-direction: column;   /* image on top */
+    align-items: center;
+    text-align: center;
+  }
+
+  .about-box img {
+    width: 180px;
+    margin-bottom: 15px;
+  }
+
+  /* Skills */
+  .skills span {
+    padding: 8px 14px;
+    font-size: 13px;
+  }
+
+  /* Projects */
+  .project-card {
+    padding: 15px;
+  }
+
+  /* Gallery */
+  .gallery-container {
+    grid-template-columns: 1fr; /* one image per row */
+  }
+
+  /* Footer */
+  footer {
+    font-size: 12px;
+    padding: 20px 10px;
+  }
+}
+
 
 
