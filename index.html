@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+    <nav>
+  <div class="nav-container">
+    <h2 class="logo">Portfolio</h2>
+
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><a href="#gallery">Gallery</a></li>
+    </ul>
+  </div>
+</nav>
+
+    </header>
+   
+  <section id="home" class="hero page active">
+  <div class="overlay"></div>
+
+  <div class="hero-content">
+    <h1 class="main-name"><b>Sanchita Sakhare</b></h1>
+    <p class="tagline">Computer Engineering Student | Programming & Problem Solving Enthusiast</p>
+    <p class="tagline2">Learning today • Creating tomorrow</p>
+    <p class="tagline3">Technical Team Member - ACM-W</p>
+  </div>
+</section>
+
+
+
+  <section id="about" class="page">
+  <div class="about-box">
+  <img src="images/sanchita1.jpg">
+
+  <div class="about-text">
+    <p><h1>SANCHITA SACHIN SAKHARE</h1></p>
+    <p>
+      I am a dedicated Computer Engineering student with a strong foundation in
+      programming and core computer science concepts. I have experience working
+      with languages such as C, C++, and Python, and possess a basic understanding
+      of Data Structures and Object-Oriented Programming. I enjoy logical problem
+      solving and continuously strive to strengthen my technical skills through
+      practical learning.
+      <br><br>
+      I am an active Technical Team Member of the ACM-W Student Chapter and have
+      participated in technical programs and internships that have enhanced my
+      understanding of real-world applications of computer engineering. With
+      consistent academic performance and a strong willingness to learn, I aim to
+      grow as a competent and responsible engineering professional.
+    </p>
+    <h3>Professional Involvement</h3>
+<p>
+  Active Technical Team Member of the ACM-W Student Chapter, contributing to
+  technical learning activities and skill-development initiatives.
+</p>
+
+
+    <a href="resume.pdf" class="btn">ABOUT ME</a>
+  </div>
+</div>
+
+  </section>
+  <section id="skills" class="page">
+  <h2>My Skills</h2>
+    <ul>
+      <li><b>Programming Languages</b></li>
+        <ul>
+          <li>C</li>
+          <LI>C++</LI>
+          <li>Python</li>
+        </ul>
+      <li><b>Core Computer Science Concepts</b></li>
+        <ul>
+          <li>Data Structures </li>
+          <li>Object-Oriented Programming (OOP)</li>
+          <li>Problem Solving and Logical Thinking</li>
+        </ul>
+      <li><b>Web Technologies</b></li>
+        <ul>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>Basic Javascript</li>
+        </ul>
+      <li><b>Tools & Technologies</b></li>
+        <ul>
+          <li>Git (Basic version control knowledge)</li>
+          <li>Visual Studio Code</li>
+        </ul>
+      <li><b>Professional & Technical Skills</b></li>
+        <ul>
+          <li>Team collaboration through technical student organizations (ACM-W)</li>
+        </ul>
+    </ul>
+  </div>
+  </section>
+  <section id="projects" class="page">
+  <div class="container">
+    <h2>Projects</h2>
+
+    <div class="project-card">
+      <a href="https://your-portfolio-link.com" target="_blank">
+        <img src="https://enwpgo.files.wordpress.com/2023/02/web-design-portfolio-header.jpg?w=1024" alt="Personal Portfolio Website" height="400">
+      </a>
+
+      <h3>Personal Portfolio Website</h3>
+
+      <p>
+        A responsive personal portfolio website designed to showcase my
+        academic profile, skills, projects, and achievements using
+        HTML, CSS, and basic JavaScript.
+      </p>
+    </div>
+
+  </div>
+</section>
+
+  <section id="gallery" class="page gallery">
+  <h2>Gallery</h2>
+
+  <div class="gallery-container">
+    <img src="images/sanchita2.jpg" alt="photo">
+    <img src="images/sanchita3.jpg" alt="photo">
+    <img src="images/sanchita4.jpg" alt="photo">
+  </div>
+  </section>
+
+  <section id="contact" class="page">
+  <h2>Contact Me</h2>
+
+  <p>Email: sanchitasakhare912@gmail.com</p>
+  <p>Phone: 9XXXXXXXXX</p>
+  </section>
+  
+
+
+</header>
+<script>
+  const links = document.querySelectorAll("nav a");
+  const pages = document.querySelectorAll(".page");
+
+  links.forEach(link => {
+    link.addEventListener("click", e => {
+      e.preventDefault();
+
+      const pageId = link.getAttribute("href").substring(1);
+
+      pages.forEach(page => page.classList.remove("active"));
+
+      document.getElementById(pageId).classList.add("active");
+    });
+  });
+</script>
+  <footer class="footer footer-home">
+    <div class="container">
+      <p class="footer-name">Sanchita Sachin Sakhare</p>
+      <p class="footer-links">
+        <a href="mailto:sanchitasakhare912@gmail.com">Email</a> |
+        <a href="https://www.linkedin.com/in/sanchita-sakhare-912s" target="_blank">LinkedIn</a> |
+        <a href="https://github.com/sanchitasakhare912-dotcom" target="_blank">GitHub</a>
+      </p>
+    </div>
+  </footer>
+
+</body>
+</html>
